@@ -1,0 +1,57 @@
+v {xschem version=3.4.8 file_version=1.2}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=X1"}
+V {}
+S {}
+E {}
+
+L 4 -110 -80 110 -80 {}
+L 4 110 -80 110 80 {}
+L 4 110 80 -110 80 {}
+L 4 -110 80 -110 -80 {}
+T {@name} -110 -100 0 0 0.33 0.33 {}
+T {analog_integration_lvs} -106 69 0 0 0.2 0.2 {}
+L 4 -130 -60 -110 -60 {}
+T {Vinp} -104 -65 0 0 0.16 0.16 {}
+L 4 -130 -40 -110 -40 {}
+T {Vinn} -104 -45 0 0 0.16 0.16 {}
+L 4 -130 -20 -110 -20 {}
+T {Vop} -104 -25 0 0 0.16 0.16 {}
+L 4 -130 0 -110 0 {}
+T {Vom} -104 -5 0 0 0.16 0.16 {}
+L 4 -130 20 -110 20 {}
+T {clk1} -104 15 0 0 0.16 0.16 {}
+L 4 -130 40 -110 40 {}
+T {clk2} -104 35 0 0 0.16 0.16 {}
+L 4 -130 60 -110 60 {}
+T {Vbiasn} -104 55 0 0 0.16 0.16 {}
+L 4 130 -60 110 -60 {}
+T {Vbiasp} 74.4 -65 0 0 0.16 0.16 {}
+L 4 130 -40 110 -40 {}
+T {clk2B} 79.0 -45 0 0 0.16 0.16 {}
+L 4 130 -20 110 -20 {}
+T {Vout} 83.6 -25 0 0 0.16 0.16 {}
+L 4 130 0 110 0 {}
+T {VDD} 88.2 -5 0 0 0.16 0.16 {}
+L 4 130 20 110 20 {}
+T {VSS} 88.2 15 0 0 0.16 0.16 {}
+L 4 130 40 110 40 {}
+T {VCM} 88.2 35 0 0 0.16 0.16 {}
+L 4 130 60 110 60 {}
+T {VREFP} 79.0 55 0 0 0.16 0.16 {}
+B 5 -132 -62 -128 -58 {name=Vinp dir=in sim_pinnumber=1}
+B 5 -132 -42 -128 -38 {name=Vinn dir=in sim_pinnumber=2}
+B 5 -132 -22 -128 -18 {name=Vop dir=out sim_pinnumber=3}
+B 5 -132 -2 -128 2 {name=Vom dir=out sim_pinnumber=4}
+B 5 -132 18 -128 22 {name=clk1 dir=in sim_pinnumber=5}
+B 5 -132 38 -128 42 {name=clk2 dir=in sim_pinnumber=6}
+B 5 -132 58 -128 62 {name=Vbiasn dir=in sim_pinnumber=7}
+B 5 128 -62 132 -58 {name=Vbiasp dir=in sim_pinnumber=8}
+B 5 128 -42 132 -38 {name=clk2B dir=in sim_pinnumber=9}
+B 5 128 -22 132 -18 {name=Vout dir=out sim_pinnumber=10}
+B 5 128 -2 132 2 {name=VDD dir=inout sim_pinnumber=11}
+B 5 128 18 132 22 {name=VSS dir=inout sim_pinnumber=12}
+B 5 128 38 132 42 {name=VCM dir=inout sim_pinnumber=13}
+B 5 128 58 132 62 {name=VREFP dir=inout sim_pinnumber=14}

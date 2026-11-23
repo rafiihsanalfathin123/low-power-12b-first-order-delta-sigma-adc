@@ -1,0 +1,78 @@
+// Pad interface wrapper. Load the unchanged ADC reference separately.
+module A52_BV_top (
+  inout wire AVSS,
+  inout wire Vbiasn,
+  inout wire Vbiasp,
+  inout wire VCM,
+  inout wire VREFP,
+  inout wire Vinn,
+  inout wire Vinp,
+  inout wire AVDD,
+  inout wire DVSS,
+  input wire rst,
+  input wire in_clk,
+  output wire serial_out,
+  input wire load_en,
+  inout wire DVDD
+);
+  wire rst_core, in_clk_core, load_en_core, serial_out_core;
+  // The GF180 BV pad ring keeps the ground rail continuous.
+  tran bv_common_ground(AVSS, DVSS);
+  integration_cell_v1 adc (
+    .AVSS(AVSS),
+    .Vbiasn(Vbiasn),
+    .Vbiasp(Vbiasp),
+    .VCM(VCM),
+    .VREFP(VREFP),
+    .Vinn(Vinn),
+    .Vinp(Vinp),
+    .AVDD(AVDD),
+    .DVSS(DVSS),
+    .rst(rst_core),
+    .in_clk(in_clk_core),
+    .serial_out(serial_out_core),
+    .load_en(load_en_core),
+    .DVDD(DVDD)
+  );
+  A52_BV_padring pad_ring (
+    .W12(AVSS),
+    .W13(Vbiasn),
+    .W13_ASIG5V(),
+    .W14(Vbiasp),
+    .W14_ASIG5V(),
+    .W15(VCM),
+    .W15_ASIG5V(),
+    .W16(VREFP),
+    .W16_ASIG5V(),
+    .W17(Vinn),
+    .W17_ASIG5V(),
+    .W18(Vinp),
+    .W18_ASIG5V(),
+    .W19(AVDD),
+    .W20(DVSS),
+    .W21(rst),
+    .W21_Y(rst_core),
+    .W22(in_clk),
+    .W22_Y(in_clk_core),
+    .N01(serial_out),
+    .N01_A(serial_out_core),
+    .N02(DVDD),
+    .N03(load_en),
+    .N03_Y(load_en_core),
+    .W21_PU(DVSS),
+    .W21_PD(DVSS),
+    .W22_PU(DVSS),
+    .W22_PD(DVSS),
+    .N03_PU(DVSS),
+    .N03_PD(DVSS),
+    .N01_CS(DVSS),
+    .N01_SL(DVSS),
+    .N01_IE(DVSS),
+    .N01_PU(DVSS),
+    .N01_PD(DVSS),
+    .N01_PDRV0(DVSS),
+    .N01_PDRV1(DVSS),
+    .N01_OE(DVDD),
+    .N01_Y()
+  );
+endmodule

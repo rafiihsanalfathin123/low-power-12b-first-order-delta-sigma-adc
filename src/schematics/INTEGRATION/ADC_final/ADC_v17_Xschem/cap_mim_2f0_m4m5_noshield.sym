@@ -1,0 +1,17 @@
+v {xschem version=3.4.8 file_version=1.2}
+G {}
+K {type=primitive
+format="@name @pinlist cap_mim_2f0_m4m5_noshield c_width=@w c_length=@l"
+template="name=X1"}
+V {}
+S {}
+E {}
+
+L 4 -30 0 -5 0 {}
+L 4 5 0 30 0 {}
+L 4 -5 -16 -5 16 {}
+L 4 5 -16 5 16 {}
+T {@name} -26 -43 0 0 0.33 0.33 {}
+T {MIM W=@w L=@l} -56 24 0 0 0.23 0.23 {}
+B 5 -32 -2 -28 2 {name=plate1 dir=inout sim_pinnumber=1}
+B 5 28 -2 32 2 {name=plate2 dir=inout sim_pinnumber=2}
