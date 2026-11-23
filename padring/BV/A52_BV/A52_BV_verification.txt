@@ -1,0 +1,130 @@
+PASS: All 10 original ADC cells, shapes, text, and child instances are identical to v19.
+PASS: 552 pad-ring placement coordinates and orientations match reviewer DEF.
+N03 changed to a CMOS input; ten filler/break instances change type to extend the digital supply domain.
+PASS: chip bbox is (0, 0) to (2935, 2935) um.
+ADC bbox (466.720, 1535.135) to (843.180, 2182.575) um.
+
+Metal and via extraction
+Extracting metal connectivity
+Extraction done
+W12 ('A52_BV_top', 1)
+ADC.AVSS ('A52_BV_top', 1)
+W13_ASIG5V ('A52_BV_top', 3)
+ADC.Vbiasn ('A52_BV_top', 3)
+W14_ASIG5V ('A52_BV_top', 5)
+ADC.Vbiasp ('A52_BV_top', 5)
+W15_ASIG5V ('A52_BV_top', 7)
+ADC.VCM ('A52_BV_top', 7)
+W16_ASIG5V ('A52_BV_top', 9)
+ADC.VREFP ('A52_BV_top', 9)
+W17_ASIG5V ('A52_BV_top', 11)
+ADC.Vinn ('A52_BV_top', 11)
+W18_ASIG5V ('A52_BV_top', 13)
+ADC.Vinp ('A52_BV_top', 13)
+W19 ('A52_BV_top', 14)
+ADC.AVDD ('A52_BV_top', 14)
+W20 ('A52_BV_top', 1)
+ADC.DVSS ('A52_BV_top', 1)
+W21_Y ('A52_BV_top', 19)
+ADC.rst ('A52_BV_top', 19)
+W22_Y ('A52_BV_top', 21)
+ADC.in_clk ('A52_BV_top', 21)
+N01_A ('A52_BV_top', 25)
+ADC.serial_out ('A52_BV_top', 25)
+N02 ('A52_BV_top', 15)
+ADC.DVDD ('A52_BV_top', 15)
+N03_Y ('A52_BV_top', 23)
+ADC.load_en ('A52_BV_top', 23)
+W21_PU ('A52_BV_top', 1)
+W21_PD ('A52_BV_top', 1)
+W22_PU ('A52_BV_top', 1)
+W22_PD ('A52_BV_top', 1)
+N01_CS ('A52_BV_top', 1)
+N01_SL ('A52_BV_top', 1)
+N01_IE ('A52_BV_top', 1)
+N01_PU ('A52_BV_top', 1)
+N01_PD ('A52_BV_top', 1)
+N01_PDRV0 ('A52_BV_top', 1)
+N01_PDRV1 ('A52_BV_top', 1)
+N03_PU ('A52_BV_top', 1)
+N03_PD ('A52_BV_top', 1)
+N01_OE ('A52_BV_top', 15)
+SUPPLY.W13.DVDD ('A52_BV_top', 14)
+SUPPLY.W13.VDD ('A52_BV_top', 14)
+SUPPLY.W13.DVSS ('A52_BV_top', 1)
+SUPPLY.W13.VSS ('A52_BV_top', 1)
+SUPPLY.W14.DVDD ('A52_BV_top', 14)
+SUPPLY.W14.VDD ('A52_BV_top', 14)
+SUPPLY.W14.DVSS ('A52_BV_top', 1)
+SUPPLY.W14.VSS ('A52_BV_top', 1)
+SUPPLY.W15.DVDD ('A52_BV_top', 14)
+SUPPLY.W15.VDD ('A52_BV_top', 14)
+SUPPLY.W15.DVSS ('A52_BV_top', 1)
+SUPPLY.W15.VSS ('A52_BV_top', 1)
+SUPPLY.W16.DVDD ('A52_BV_top', 14)
+SUPPLY.W16.VDD ('A52_BV_top', 14)
+SUPPLY.W16.DVSS ('A52_BV_top', 1)
+SUPPLY.W16.VSS ('A52_BV_top', 1)
+SUPPLY.W17.DVDD ('A52_BV_top', 14)
+SUPPLY.W17.VDD ('A52_BV_top', 14)
+SUPPLY.W17.DVSS ('A52_BV_top', 1)
+SUPPLY.W17.VSS ('A52_BV_top', 1)
+SUPPLY.W18.DVDD ('A52_BV_top', 14)
+SUPPLY.W18.VDD ('A52_BV_top', 14)
+SUPPLY.W18.DVSS ('A52_BV_top', 1)
+SUPPLY.W18.VSS ('A52_BV_top', 1)
+SUPPLY.W21.DVDD ('A52_BV_top', 15)
+SUPPLY.W21.VDD ('A52_BV_top', 15)
+SUPPLY.W21.DVSS ('A52_BV_top', 1)
+SUPPLY.W21.VSS ('A52_BV_top', 1)
+SUPPLY.W22.DVDD ('A52_BV_top', 15)
+SUPPLY.W22.VDD ('A52_BV_top', 15)
+SUPPLY.W22.DVSS ('A52_BV_top', 1)
+SUPPLY.W22.VSS ('A52_BV_top', 1)
+SUPPLY.N01.DVDD ('A52_BV_top', 15)
+SUPPLY.N01.VDD ('A52_BV_top', 15)
+SUPPLY.N01.DVSS ('A52_BV_top', 1)
+SUPPLY.N01.VSS ('A52_BV_top', 1)
+SUPPLY.N03.DVDD ('A52_BV_top', 15)
+SUPPLY.N03.VDD ('A52_BV_top', 15)
+SUPPLY.N03.DVSS ('A52_BV_top', 1)
+SUPPLY.N03.VSS ('A52_BV_top', 1)
+BOND.AVSS ('A52_BV_top', 1)
+BOND.Vbiasn ('A52_BV_top', 3)
+BOND.Vbiasp ('A52_BV_top', 5)
+BOND.VREFP ('A52_BV_top', 9)
+BOND.AVDD ('A52_BV_top', 14)
+BOND.DVSS ('A52_BV_top', 1)
+BOND.rst ('A52_BV_top', 22)
+BOND.in_clk ('A52_BV_top', 24)
+BOND.serial_out ('A52_BV_top', 26)
+BOND.DVDD ('A52_BV_top', 15)
+BOND.VCM ('A52_BV_top', 7)
+BOND.Vinn ('A52_BV_top', 11)
+BOND.Vinp ('A52_BV_top', 13)
+BOND.load_en ('A52_BV_top', 28)
+PASS: 14 bond pads (AVSS and DVSS common via pad ring); all 14 ADC ports; all exposed pad-to-core metal connections and 14 control ties verified; analog/digital pad supplies verified.
+
+Focused routing checks
+M2 min width: 0
+M2 min space: 0
+M3 min width: 0
+M3 min space: 0
+M4 min width: 0
+M4 min space: 0
+M5 min width: 0
+M5 min space: 0
+Via 38 64 size mismatches 0
+  enclosure lower 0
+  enclosure upper 0
+Via 40 89 size mismatches 0
+  enclosure lower 0
+  enclosure upper 0
+Via 41 4 size mismatches 0
+  enclosure lower 0
+  enclosure upper 0
+
+Full-chip sign-off
+ERROR: In ../../tools/gf_pv/klayout/drc/gf180mcu.drc: 'edges': Heap lost: the DeepShapeStore container no longer exists in Region::edges
+ERROR: RuntimeError: 'edges': Heap lost: the DeepShapeStore container no longer exists in Region::edges in Executable::execute
+Full assembled-chip device LVS has not been run.

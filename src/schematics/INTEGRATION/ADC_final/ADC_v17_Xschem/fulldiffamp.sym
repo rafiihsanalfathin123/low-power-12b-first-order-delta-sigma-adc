@@ -1,0 +1,38 @@
+v {xschem version=3.4.8 file_version=1.2}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=X1"}
+V {}
+S {}
+E {}
+L 4 -20 -43 39 -43 {}
+L 4 39 -43 39 34 {}
+L 4 39 34 -20 34 {}
+L 4 -20 34 -20 -43 {}
+T {@name} -18 -77 0 0 .36 .36 {}
+T {Amplifier} -18 -60 0 0 .36 .36 {}
+L 4 -40.0 -30 -20 -30 {}
+B 5 -41.25 -31.25 -38.75 -28.75 {name=VDD dir=inout sim_pinnumber=1}
+T {VDD} -18 -38 0 0 .15 .15 {}
+L 4 32.5 22.5 18 22.5 {}
+B 5 31.25 21.25 33.75 23.75 {name=Vbiasp dir=inout sim_pinnumber=2}
+T {Vbiasp} -11 15 0 0 .15 .15 {}
+L 4 -40.0 25 -20 25 {}
+B 5 -41.25 23.75 -38.75 26.25 {name=Vp dir=inout sim_pinnumber=3}
+T {Vp} -18 18 0 0 .15 .15 {}
+L 4 61.25 -7.5 39 -7.5 {}
+B 5 60.0 -8.75 62.5 -6.25 {name=Vop dir=inout sim_pinnumber=4}
+T {Vop} 14 -16 0 0 .15 .15 {}
+L 4 -40.0 -10 -20 -10 {}
+B 5 -41.25 -11.25 -38.75 -8.75 {name=Vm dir=inout sim_pinnumber=5}
+T {Vm} -18 -18 0 0 .15 .15 {}
+L 4 62.5 16.25 39 16.25 {}
+B 5 61.25 15.0 63.75 17.5 {name=Vom dir=inout sim_pinnumber=6}
+T {Vom} 14 8 0 0 .15 .15 {}
+L 4 0.0 42.5 0 32 {}
+B 5 -1.25 41.25 1.25 43.75 {name=Vbiasn dir=inout sim_pinnumber=7}
+T {Vbiasn} -19 24 0 0 .15 .15 {}
+L 4 -40.0 45 -20 32 {}
+B 5 -41.25 43.75 -38.75 46.25 {name=VSS dir=inout sim_pinnumber=8}
+T {VSS} -18 29 0 0 .15 .15 {}

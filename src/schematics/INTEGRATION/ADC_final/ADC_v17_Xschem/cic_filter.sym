@@ -1,0 +1,66 @@
+v {xschem version=3.4.8 file_version=1.2}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=X1"}
+V {}
+S {}
+E {}
+
+L 4 -110 -100 110 -100 {}
+L 4 110 -100 110 100 {}
+L 4 110 100 -110 100 {}
+L 4 -110 100 -110 -100 {}
+T {@name} -110 -120 0 0 0.33 0.33 {}
+T {cic_filter} -106 89 0 0 0.2 0.2 {}
+L 4 -130 -80 -110 -80 {}
+T {clk} -104 -85 0 0 0.16 0.16 {}
+L 4 -130 -60 -110 -60 {}
+T {in_cic} -104 -65 0 0 0.16 0.16 {}
+L 4 -130 -40 -110 -40 {}
+T {rst} -104 -45 0 0 0.16 0.16 {}
+L 4 -130 -20 -110 -20 {}
+T {VDD} -104 -25 0 0 0.16 0.16 {}
+L 4 -130 0 -110 0 {}
+T {VSS} -104 -5 0 0 0.16 0.16 {}
+L 4 -130 20 -110 20 {}
+T {out_cic_b0} -104 15 0 0 0.16 0.16 {}
+L 4 -130 40 -110 40 {}
+T {out_cic_b1} -104 35 0 0 0.16 0.16 {}
+L 4 -130 60 -110 60 {}
+T {out_cic_b2} -104 55 0 0 0.16 0.16 {}
+L 4 -130 80 -110 80 {}
+T {out_cic_b3} -104 75 0 0 0.16 0.16 {}
+L 4 130 -70 110 -70 {}
+T {out_cic_b4} 56.0 -75 0 0 0.16 0.16 {}
+L 4 130 -50 110 -50 {}
+T {out_cic_b5} 56.0 -55 0 0 0.16 0.16 {}
+L 4 130 -30 110 -30 {}
+T {out_cic_b6} 56.0 -35 0 0 0.16 0.16 {}
+L 4 130 -10 110 -10 {}
+T {out_cic_b7} 56.0 -15 0 0 0.16 0.16 {}
+L 4 130 10 110 10 {}
+T {out_cic_b8} 56.0 5 0 0 0.16 0.16 {}
+L 4 130 30 110 30 {}
+T {out_cic_b9} 56.0 25 0 0 0.16 0.16 {}
+L 4 130 50 110 50 {}
+T {out_cic_b10} 51.400000000000006 45 0 0 0.16 0.16 {}
+L 4 130 70 110 70 {}
+T {out_cic_b11} 51.400000000000006 65 0 0 0.16 0.16 {}
+B 5 -132 -82 -128 -78 {name=clk dir=inout sim_pinnumber=1}
+B 5 -132 -62 -128 -58 {name=in_cic dir=inout sim_pinnumber=2}
+B 5 -132 -42 -128 -38 {name=rst dir=inout sim_pinnumber=3}
+B 5 -132 -22 -128 -18 {name=VDD dir=inout sim_pinnumber=4}
+B 5 -132 -2 -128 2 {name=VSS dir=inout sim_pinnumber=5}
+B 5 -132 18 -128 22 {name=out_cic_b0 dir=inout sim_pinnumber=6}
+B 5 -132 38 -128 42 {name=out_cic_b1 dir=inout sim_pinnumber=7}
+B 5 -132 58 -128 62 {name=out_cic_b2 dir=inout sim_pinnumber=8}
+B 5 -132 78 -128 82 {name=out_cic_b3 dir=inout sim_pinnumber=9}
+B 5 128 -72 132 -68 {name=out_cic_b4 dir=inout sim_pinnumber=10}
+B 5 128 -52 132 -48 {name=out_cic_b5 dir=inout sim_pinnumber=11}
+B 5 128 -32 132 -28 {name=out_cic_b6 dir=inout sim_pinnumber=12}
+B 5 128 -12 132 -8 {name=out_cic_b7 dir=inout sim_pinnumber=13}
+B 5 128 8 132 12 {name=out_cic_b8 dir=inout sim_pinnumber=14}
+B 5 128 28 132 32 {name=out_cic_b9 dir=inout sim_pinnumber=15}
+B 5 128 48 132 52 {name=out_cic_b10 dir=inout sim_pinnumber=16}
+B 5 128 68 132 72 {name=out_cic_b11 dir=inout sim_pinnumber=17}

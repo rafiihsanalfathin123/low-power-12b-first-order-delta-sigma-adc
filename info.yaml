@@ -34,16 +34,16 @@ pins:
   - name: Vbiasp
     io_type: analog
     secondary_esd: true
-  - name: VREFN
+  - name: VCM
     io_type: analog
     secondary_esd: true
   - name: VREFP
     io_type: analog
     secondary_esd: true
-  - name: Vin-
+  - name: Vinn
     io_type: analog
     secondary_esd: true
-  - name: Vin+
+  - name: Vinp
     io_type: analog
     secondary_esd: true
   - name: AVDD
@@ -58,5 +58,7 @@ pins:
     io_type: input_schmitt
   - name: serial_out
     io_type: bidirectional
+  - name: load_en
+    io_type: input_cmos
   - name: DVDD
     io_type: power

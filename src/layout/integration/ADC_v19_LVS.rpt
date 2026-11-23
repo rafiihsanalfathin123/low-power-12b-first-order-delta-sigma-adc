@@ -1,0 +1,223 @@
+
+Circuit 1 cell nfet_05v0 and Circuit 2 cell nfet_05v0 are black boxes.
+Warning: Equate pins:  cell nfet_05v0 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_05v0 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_05v0                       |Circuit 2: nfet_05v0                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_05v0 and nfet_05v0 are equivalent.
+
+Circuit 1 cell pfet_05v0 and Circuit 2 cell pfet_05v0 are black boxes.
+Warning: Equate pins:  cell pfet_05v0 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_05v0 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_05v0                       |Circuit 2: pfet_05v0                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_05v0 and pfet_05v0 are equivalent.
+
+Circuit 1 cell pfet_03v3 and Circuit 2 cell pfet_03v3 are black boxes.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell pfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: pfet_03v3                       |Circuit 2: pfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes pfet_03v3 and pfet_03v3 are equivalent.
+
+Circuit 1 cell nfet_03v3 and Circuit 2 cell nfet_03v3 are black boxes.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell nfet_03v3 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: nfet_03v3                       |Circuit 2: nfet_03v3                       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes nfet_03v3 and nfet_03v3 are equivalent.
+
+Circuit 1 cell cap_mim_2f0_m4m5_noshield and Circuit 2 cell cap_mim_2f0_m4m5_noshield are black boxes.
+Warning: Equate pins:  cell cap_mim_2f0_m4m5_noshield is a placeholder, treated as a black box.
+Warning: Equate pins:  cell cap_mim_2f0_m4m5_noshield is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: cap_mim_2f0_m4m5_noshield       |Circuit 2: cap_mim_2f0_m4m5_noshield       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes cap_mim_2f0_m4m5_noshield and cap_mim_2f0_m4m5_noshield are equivalent.
+
+Circuit 1 cell ppolyf_u and Circuit 2 cell ppolyf_u are black boxes.
+Warning: Equate pins:  cell ppolyf_u is a placeholder, treated as a black box.
+Warning: Equate pins:  cell ppolyf_u is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: ppolyf_u                        |Circuit 2: ppolyf_u                        
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes ppolyf_u and ppolyf_u are equivalent.
+Flattening unmatched subcell v8_clock_region in circuit integration_cell_v1 (0)(1 instance)
+Flattening unmatched subcell v8_PISO_region in circuit integration_cell_v1 (0)(1 instance)
+Flattening unmatched subcell v8_CIC_as_integrated in circuit integration_cell_v1 (0)(1 instance)
+Flattening unmatched subcell cap_mim in circuit integration_cell_v1 (0)(2 instances)
+Flattening unmatched subcell adc_v17_analog_dac_minus in circuit integration_cell_v1 (0)(1 instance)
+Flattening unmatched subcell adc_v17_analog_dac_plus in circuit integration_cell_v1 (0)(1 instance)
+Flattening unmatched subcell adc_v17_analog_integrator in circuit integration_cell_v1 (0)(1 instance)
+Flattening unmatched subcell adc_v17_analog_diffamp in circuit integration_cell_v1 (0)(1 instance)
+Flattening unmatched subcell adc_v17_analog_comparator in circuit integration_cell_v1 (0)(1 instance)
+Flattening unmatched subcell andig_clock in circuit integration_cell_v1 (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__fillcap_32 in circuit integration_cell_v1 (1)(18 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__fillcap_8 in circuit integration_cell_v1 (1)(21 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__fillcap_4 in circuit integration_cell_v1 (1)(26 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__fillcap_16 in circuit integration_cell_v1 (1)(7 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__fillcap_64 in circuit integration_cell_v1 (1)(14 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__clkinv_1 in circuit integration_cell_v1 (1)(3 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__and2_1 in circuit integration_cell_v1 (1)(2 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__aoi21_1 in circuit integration_cell_v1 (1)(3 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__nand2_1 in circuit integration_cell_v1 (1)(2 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__nor2_1 in circuit integration_cell_v1 (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__nor3_1 in circuit integration_cell_v1 (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__mux2_2 in circuit integration_cell_v1 (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__nand3_1 in circuit integration_cell_v1 (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__oai21_1 in circuit integration_cell_v1 (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__aoi22_1 in circuit integration_cell_v1 (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__dffsnq_1 in circuit integration_cell_v1 (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 in circuit integration_cell_v1 (1)(5 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__clkbuf_16 in circuit integration_cell_v1 (1)(3 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__clkbuf_2 in circuit integration_cell_v1 (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__dlyb_1 in circuit integration_cell_v1 (1)(5 instances)
+Flattening unmatched subcell cic_filter in circuit integration_cell_v1 (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__fillcap_4 in circuit integration_cell_v1 (1)(101 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__fillcap_8 in circuit integration_cell_v1 (1)(35 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__fillcap_16 in circuit integration_cell_v1 (1)(8 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__clkinv_1 in circuit integration_cell_v1 (1)(126 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__nand2_1 in circuit integration_cell_v1 (1)(225 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__nand3_1 in circuit integration_cell_v1 (1)(29 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__and4_1 in circuit integration_cell_v1 (1)(27 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__xor2_1 in circuit integration_cell_v1 (1)(86 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__xnor2_1 in circuit integration_cell_v1 (1)(26 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__nand4_1 in circuit integration_cell_v1 (1)(31 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__nor2_1 in circuit integration_cell_v1 (1)(87 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__xor3_1 in circuit integration_cell_v1 (1)(43 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__and2_1 in circuit integration_cell_v1 (1)(38 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__oai211_1 in circuit integration_cell_v1 (1)(26 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__oai21_1 in circuit integration_cell_v1 (1)(63 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__aoi211_1 in circuit integration_cell_v1 (1)(13 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__aoi21_1 in circuit integration_cell_v1 (1)(99 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__or2_1 in circuit integration_cell_v1 (1)(39 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__aoi22_1 in circuit integration_cell_v1 (1)(20 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__and3_1 in circuit integration_cell_v1 (1)(9 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__oai22_1 in circuit integration_cell_v1 (1)(17 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__nor3_1 in circuit integration_cell_v1 (1)(10 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__xnor3_1 in circuit integration_cell_v1 (1)(4 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__oai31_1 in circuit integration_cell_v1 (1)(5 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__nor4_1 in circuit integration_cell_v1 (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__or3_1 in circuit integration_cell_v1 (1)(4 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__oai221_1 in circuit integration_cell_v1 (1)(3 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__aoi221_1 in circuit integration_cell_v1 (1)(4 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 in circuit integration_cell_v1 (1)(82 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__dffrnq_2 in circuit integration_cell_v1 (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1 in circuit integration_cell_v1 (1)(137 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__clkbuf_16 in circuit integration_cell_v1 (1)(9 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__inv_4 in circuit integration_cell_v1 (1)(4 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__clkinv_2 in circuit integration_cell_v1 (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__inv_2 in circuit integration_cell_v1 (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__clkinv_8 in circuit integration_cell_v1 (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__dlyb_1 in circuit integration_cell_v1 (1)(13 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__buf_4 in circuit integration_cell_v1 (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__buf_8 in circuit integration_cell_v1 (1)(2 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__buf_12 in circuit integration_cell_v1 (1)(3 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__clkbuf_20 in circuit integration_cell_v1 (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__buf_16 in circuit integration_cell_v1 (1)(1 instance)
+Flattening unmatched subcell piso_12bit in circuit integration_cell_v1 (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__fillcap_32 in circuit integration_cell_v1 (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__fillcap_16 in circuit integration_cell_v1 (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__fillcap_8 in circuit integration_cell_v1 (1)(2 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__fillcap_4 in circuit integration_cell_v1 (1)(2 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__clkinv_1 in circuit integration_cell_v1 (1)(11 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__nand2_1 in circuit integration_cell_v1 (1)(11 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__oai21_1 in circuit integration_cell_v1 (1)(11 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__and2_1 in circuit integration_cell_v1 (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 in circuit integration_cell_v1 (1)(12 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__clkbuf_16 in circuit integration_cell_v1 (1)(3 instances)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__clkinv_2 in circuit integration_cell_v1 (1)(1 instance)
+Flattening unmatched subcell gf180mcu_fd_sc_mcu7t5v0__dlyb_1 in circuit integration_cell_v1 (1)(15 instances)
+Flattening unmatched subcell analog_integration_lvs in circuit integration_cell_v1 (1)(1 instance)
+Flattening unmatched subcell fulldiffamp in circuit integration_cell_v1 (1)(1 instance)
+Flattening unmatched subcell ADCv16_verified_comparator in circuit integration_cell_v1 (1)(1 instance)
+Flattening unmatched subcell DAC_1_BIT_PLUS in circuit integration_cell_v1 (1)(1 instance)
+Flattening unmatched subcell DAC_1_BIT_MIN in circuit integration_cell_v1 (1)(1 instance)
+
+Class integration_cell_v1 (0):  Merged 967 parallel devices.
+Class integration_cell_v1 (1):  Merged 959 parallel devices.
+Subcircuit summary:
+Circuit 1: integration_cell_v1             |Circuit 2: integration_cell_v1             
+-------------------------------------------|-------------------------------------------
+nfet_05v0 (8116->7671)                     |nfet_05v0 (8116->7671)                     
+pfet_05v0 (8148->7671)                     |pfet_05v0 (8148->7671)                     
+cap_mim_2f0_m4m5_noshield (4)              |cap_mim_2f0_m4m5_noshield (4)              
+nfet_03v3 (33->28)                         |nfet_03v3 (29->28)                         
+pfet_03v3 (29->25)                         |pfet_03v3 (25)                             
+diode_pd2nw_06v0 (24->6)                   |diode_pd2nw_06v0 (24->6)                   
+diode_nd2ps_06v0 (24->6)                   |diode_nd2ps_06v0 (24->6)                   
+ppolyf_u (6)                               |ppolyf_u (6)                               
+Number of devices: 15417                   |Number of devices: 15417                   
+Number of nets: 8230                       |Number of nets: 8230                       
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Resolving symmetries by net name.
+Netlists match with 4 symmetries.
+
+Subcircuit pins:
+Circuit 1: integration_cell_v1             |Circuit 2: integration_cell_v1             
+-------------------------------------------|-------------------------------------------
+VCM                                        |VCM                                        
+Vbiasp                                     |Vbiasp                                     
+VREFP                                      |VREFP                                      
+Vbiasn                                     |Vbiasn                                     
+Vinp                                       |Vinp                                       
+Vinn                                       |Vinn                                       
+AVDD                                       |AVDD                                       
+AVSS                                       |AVSS                                       
+DVSS                                       |DVSS                                       
+rst                                        |rst                                        
+DVDD                                       |DVDD                                       
+in_clk                                     |in_clk                                     
+load_en                                    |load_en                                    
+serial_out                                 |serial_out                                 
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes integration_cell_v1 and integration_cell_v1 are equivalent.
+
+Final result: Circuits match uniquely.
+.

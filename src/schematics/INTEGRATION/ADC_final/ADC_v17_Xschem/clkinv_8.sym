@@ -1,0 +1,33 @@
+v {xschem version=3.4.8 file_version=1.2}
+G {}
+K {type=primitive
+format="@name @pinlist gf180mcu_fd_sc_mcu7t5v0__clkinv_8 @extra"
+template="name=X1"}
+V {}
+S {}
+E {}
+
+L 4 -72 -40 72 -40 {}
+L 4 72 -40 72 40 {}
+L 4 72 40 -72 40 {}
+L 4 -72 40 -72 -40 {}
+T {@name} -72 -60 0 0 0.33 0.33 {}
+T {clkinv_8} -68 29 0 0 0.2 0.2 {}
+L 4 -92 -20 -72 -20 {}
+T {I} -66 -25 0 0 0.16 0.16 {}
+L 4 -92 0 -72 0 {}
+T {ZN} -66 -5 0 0 0.16 0.16 {}
+L 4 -92 20 -72 20 {}
+T {VDD} -66 15 0 0 0.16 0.16 {}
+L 4 92 -20 72 -20 {}
+T {VNW} 50.2 -25 0 0 0.16 0.16 {}
+L 4 92 0 72 0 {}
+T {VPW} 50.2 -5 0 0 0.16 0.16 {}
+L 4 92 20 72 20 {}
+T {VSS} 50.2 15 0 0 0.16 0.16 {}
+B 5 -94 -22 -90 -18 {name=I dir=inout sim_pinnumber=1}
+B 5 -94 -2 -90 2 {name=ZN dir=inout sim_pinnumber=2}
+B 5 -94 18 -90 22 {name=VDD dir=inout sim_pinnumber=3}
+B 5 90 -22 94 -18 {name=VNW dir=inout sim_pinnumber=4}
+B 5 90 -2 94 2 {name=VPW dir=inout sim_pinnumber=5}
+B 5 90 18 94 22 {name=VSS dir=inout sim_pinnumber=6}

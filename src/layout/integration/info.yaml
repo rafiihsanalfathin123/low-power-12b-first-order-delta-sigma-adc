@@ -1,0 +1,64 @@
+# ----- ------ ----- ----- ------ ----- ----- ------ -----
+# Chipathon 2026: Project configuration
+# LICENSE: Apache License Version 2.0
+# http://www.apache.org/licenses/
+# ----- ------ ----- ----- ------ ----- ----- ------ -----
+
+# data will be pulled from main branch of the repo.
+# please be sure that the main branch contains the data you want to submit.
+# This file will be updated with more information later
+
+# ======================================================
+# Project metadata (used for documentation / review)
+# ======================================================
+
+project:
+  title: "Low-Power 12-Bit First-Order Delta-Sigma ADC"
+  team: "ARNSChips"
+  discord: "mycompanyios"
+  description: "A low-power 12-bit first-order delta-sigma ADC in GF180MCU-D with an analog modulator, CIC decimation filter, and 12-bit PISO serial output."
+  lvs_config: "lvs_config.json"
+  gf_def_ready: false
+  ws_def_ready: false
+  drc_ready: true
+  lvs_ready: false
+  export_control: "docs/Export_Control_GF_Rev8.2.docx"
+
+pins:
+  # Analog
+  - name: AVSS
+    io_type: ground
+  - name: Vbiasn
+    io_type: analog
+    secondary_esd: true
+  - name: Vbiasp
+    io_type: analog
+    secondary_esd: true
+  - name: VCM
+    io_type: analog
+    secondary_esd: true
+  - name: VREFP
+    io_type: analog
+    secondary_esd: true
+  - name: Vinn
+    io_type: analog
+    secondary_esd: true
+  - name: Vinp
+    io_type: analog
+    secondary_esd: true
+  - name: AVDD
+    io_type: power
+    
+  # Digital
+  - name: DVSS
+    io_type: ground
+  - name: rst
+    io_type: input_cmos
+  - name: in_clk
+    io_type: input_schmitt
+  - name: serial_out
+    io_type: bidirectional
+  - name: load_en
+    io_type: input_cmos
+  - name: DVDD
+    io_type: power
