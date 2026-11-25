@@ -109,9 +109,9 @@ module A52_BV_padring (
     N01_PDRV0,
     N01_PDRV1,
     N01_Y,
-    N03_PU,
-    N03_PD,
-    N03_Y
+    N02_PU,
+    N02_PD,
+    N02_Y
 );
   inout N01;
   inout N02;
@@ -223,16 +223,16 @@ module A52_BV_padring (
   input N01_PDRV0;
   input N01_PDRV1;
   output N01_Y;
-  input N03_PU;
-  input N03_PD;
-  output N03_Y;
+  input N02_PU;
+  input N02_PD;
+  output N02_Y;
   wire FLOAT_VDD_1;
 
   assign W20 = W12;
 
-  gf180mcu_fd_io__bi_t N01 (.CS(N01_CS), .SL(N01_SL), .IE(N01_IE), .OE(N01_OE), .PU(N01_PU), .PD(N01_PD), .A(N01_A), .PDRV0(N01_PDRV0), .PDRV1(N01_PDRV1), .Y(N01_Y), .PAD(N01), .VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
-  gf180mcu_fd_io__dvdd N02 (.DVDD(N02), .VSS(W12), .DVSS(W12));
-  gf180mcu_fd_io__in_c N03 (.PU(N03_PU), .PD(N03_PD), .Y(N03_Y), .PAD(N03), .VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
+  gf180mcu_fd_io__bi_t N01 (.CS(N01_CS), .SL(N01_SL), .IE(N01_IE), .OE(N01_OE), .PU(N01_PU), .PD(N01_PD), .A(N01_A), .PDRV0(N01_PDRV0), .PDRV1(N01_PDRV1), .Y(N01_Y), .PAD(N01), .VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
+  gf180mcu_fd_io__in_c N02 (.PU(N02_PU), .PD(N02_PD), .Y(N02_Y), .PAD(N02), .VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
+  gf180mcu_fd_io__dvdd N03 (.DVDD(N03), .VSS(W12), .DVSS(W12));
   gf180mcu_fd_io__asig_5p0 N04 (.ASIG5V(N04), .VSS(W12), .DVSS(W12), .VDD(FLOAT_VDD_1), .DVDD(FLOAT_VDD_1));
   gf180mcu_fd_io__asig_5p0 N05 (.ASIG5V(N05), .VSS(W12), .DVSS(W12), .VDD(FLOAT_VDD_1), .DVDD(FLOAT_VDD_1));
   gf180mcu_fd_io__asig_5p0 N06 (.ASIG5V(N06), .VSS(W12), .DVSS(W12), .VDD(FLOAT_VDD_1), .DVDD(FLOAT_VDD_1));
@@ -299,9 +299,9 @@ module A52_BV_padring (
   assign W18_ASIG5V = W18;
   gf180mcu_fd_io__asig_5p0 W18 (.ASIG5V(W18), .VSS(W12), .DVSS(W12), .VDD(W19), .DVDD(W19));
   gf180mcu_fd_io__dvdd W19 (.DVDD(W19), .VSS(W12), .DVSS(W12));
-  gf180mcu_fd_io__dvss W20 (.DVSS(W20), .VDD(N02), .DVDD(N02));
-  gf180mcu_fd_io__in_c W21 (.PU(W21_PU), .PD(W21_PD), .Y(W21_Y), .PAD(W21), .VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
-  gf180mcu_fd_io__in_s W22 (.PU(W22_PU), .PD(W22_PD), .Y(W22_Y), .PAD(W22), .VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
+  gf180mcu_fd_io__dvss W20 (.DVSS(W20), .VDD(N03), .DVDD(N03));
+  gf180mcu_fd_io__in_c W21 (.PU(W21_PU), .PD(W21_PD), .Y(W21_Y), .PAD(W21), .VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
+  gf180mcu_fd_io__in_s W22 (.PU(W22_PU), .PD(W22_PD), .Y(W22_Y), .PAD(W22), .VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
   gf180mcu_fd_io__asig_5p0 E01 (.ASIG5V(E01), .VSS(W12), .DVSS(W12), .VDD(FLOAT_VDD_1), .DVDD(FLOAT_VDD_1));
   gf180mcu_fd_io__asig_5p0 E02 (.ASIG5V(E02), .VSS(W12), .DVSS(W12), .VDD(FLOAT_VDD_1), .DVDD(FLOAT_VDD_1));
   gf180mcu_fd_io__asig_5p0 E03 (.ASIG5V(E03), .VSS(W12), .DVSS(W12), .VDD(FLOAT_VDD_1), .DVDD(FLOAT_VDD_1));
@@ -324,25 +324,25 @@ module A52_BV_padring (
   gf180mcu_fd_io__asig_5p0 E20 (.ASIG5V(E20), .VSS(W12), .DVSS(W12), .VDD(FLOAT_VDD_1), .DVDD(FLOAT_VDD_1));
   gf180mcu_fd_io__asig_5p0 E21 (.ASIG5V(E21), .VSS(W12), .DVSS(W12), .VDD(FLOAT_VDD_1), .DVDD(FLOAT_VDD_1));
   gf180mcu_fd_io__asig_5p0 E22 (.ASIG5V(E22), .VSS(W12), .DVSS(W12), .VDD(FLOAT_VDD_1), .DVDD(FLOAT_VDD_1));
-  gf180mcu_fd_io__cor CORNER_4 (.VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
+  gf180mcu_fd_io__cor CORNER_4 (.VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
   gf180mcu_fd_io__cor CORNER_3 (.VSS(W12), .DVSS(W12), .VDD(FLOAT_VDD_1), .DVDD(FLOAT_VDD_1));
   gf180mcu_fd_io__cor CORNER_2 (.VSS(W12), .DVSS(W12), .VDD(FLOAT_VDD_1), .DVDD(FLOAT_VDD_1));
   gf180mcu_fd_io__cor CORNER_1 (.VSS(W12), .DVSS(W12), .VDD(FLOAT_VDD_1), .DVDD(FLOAT_VDD_1));
-  gf180mcu_fd_io__fill5 FILL_N00_1 (.VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
-  gf180mcu_fd_io__fill5 FILL_N00_2 (.VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
-  gf180mcu_fd_io__fill5 FILL_N00_3 (.VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
-  gf180mcu_fd_io__fill5 FILL_N00_4 (.VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
-  gf180mcu_fd_io__fill5 FILL_N00_5 (.VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
-  gf180mcu_fd_io__fill5 FILL_N01_1 (.VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
-  gf180mcu_fd_io__fill5 FILL_N01_2 (.VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
-  gf180mcu_fd_io__fill5 FILL_N01_3 (.VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
-  gf180mcu_fd_io__fill5 FILL_N01_4 (.VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
-  gf180mcu_fd_io__fill5 FILL_N01_5 (.VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
-  gf180mcu_fd_io__fill5 FILL_N02_1 (.VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
-  gf180mcu_fd_io__fill5 FILL_N02_2 (.VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
-  gf180mcu_fd_io__fill5 FILL_N02_3 (.VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
-  gf180mcu_fd_io__fill5 FILL_N02_4 (.VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
-  gf180mcu_fd_io__fill5 FILL_N02_5 (.VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
+  gf180mcu_fd_io__fill5 FILL_N00_1 (.VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
+  gf180mcu_fd_io__fill5 FILL_N00_2 (.VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
+  gf180mcu_fd_io__fill5 FILL_N00_3 (.VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
+  gf180mcu_fd_io__fill5 FILL_N00_4 (.VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
+  gf180mcu_fd_io__fill5 FILL_N00_5 (.VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
+  gf180mcu_fd_io__fill5 FILL_N01_1 (.VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
+  gf180mcu_fd_io__fill5 FILL_N01_2 (.VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
+  gf180mcu_fd_io__fill5 FILL_N01_3 (.VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
+  gf180mcu_fd_io__fill5 FILL_N01_4 (.VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
+  gf180mcu_fd_io__fill5 FILL_N01_5 (.VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
+  gf180mcu_fd_io__fill5 FILL_N02_1 (.VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
+  gf180mcu_fd_io__fill5 FILL_N02_2 (.VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
+  gf180mcu_fd_io__fill5 FILL_N02_3 (.VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
+  gf180mcu_fd_io__fill5 FILL_N02_4 (.VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
+  gf180mcu_fd_io__fill5 FILL_N02_5 (.VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
   gf180mcu_fd_io__brk5 BRK_N03_1 (.VSS(W12));
   gf180mcu_fd_io__brk5 BRK_N03_2 (.VSS(W12));
   gf180mcu_fd_io__brk5 BRK_N03_3 (.VSS(W12));
@@ -658,21 +658,21 @@ module A52_BV_padring (
   gf180mcu_fd_io__brk5 BRK_W19_3 (.VSS(W12));
   gf180mcu_fd_io__brk5 BRK_W19_4 (.VSS(W12));
   gf180mcu_fd_io__brk5 BRK_W19_5 (.VSS(W12));
-  gf180mcu_fd_io__fill5 FILL_W20_1 (.VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
-  gf180mcu_fd_io__fill5 FILL_W20_2 (.VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
-  gf180mcu_fd_io__fill5 FILL_W20_3 (.VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
-  gf180mcu_fd_io__fill5 FILL_W20_4 (.VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
-  gf180mcu_fd_io__fill5 FILL_W20_5 (.VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
-  gf180mcu_fd_io__fill5 FILL_W21_1 (.VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
-  gf180mcu_fd_io__fill5 FILL_W21_2 (.VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
-  gf180mcu_fd_io__fill5 FILL_W21_3 (.VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
-  gf180mcu_fd_io__fill5 FILL_W21_4 (.VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
-  gf180mcu_fd_io__fill5 FILL_W21_5 (.VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
-  gf180mcu_fd_io__fill5 FILL_W22_1 (.VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
-  gf180mcu_fd_io__fill5 FILL_W22_2 (.VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
-  gf180mcu_fd_io__fill5 FILL_W22_3 (.VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
-  gf180mcu_fd_io__fill5 FILL_W22_4 (.VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
-  gf180mcu_fd_io__fill5 FILL_W22_5 (.VSS(W12), .DVSS(W12), .VDD(N02), .DVDD(N02));
+  gf180mcu_fd_io__fill5 FILL_W20_1 (.VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
+  gf180mcu_fd_io__fill5 FILL_W20_2 (.VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
+  gf180mcu_fd_io__fill5 FILL_W20_3 (.VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
+  gf180mcu_fd_io__fill5 FILL_W20_4 (.VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
+  gf180mcu_fd_io__fill5 FILL_W20_5 (.VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
+  gf180mcu_fd_io__fill5 FILL_W21_1 (.VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
+  gf180mcu_fd_io__fill5 FILL_W21_2 (.VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
+  gf180mcu_fd_io__fill5 FILL_W21_3 (.VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
+  gf180mcu_fd_io__fill5 FILL_W21_4 (.VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
+  gf180mcu_fd_io__fill5 FILL_W21_5 (.VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
+  gf180mcu_fd_io__fill5 FILL_W22_1 (.VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
+  gf180mcu_fd_io__fill5 FILL_W22_2 (.VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
+  gf180mcu_fd_io__fill5 FILL_W22_3 (.VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
+  gf180mcu_fd_io__fill5 FILL_W22_4 (.VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
+  gf180mcu_fd_io__fill5 FILL_W22_5 (.VSS(W12), .DVSS(W12), .VDD(N03), .DVDD(N03));
   gf180mcu_fd_io__fill5 FILL_E00_1 (.VSS(W12), .DVSS(W12), .VDD(FLOAT_VDD_1), .DVDD(FLOAT_VDD_1));
   gf180mcu_fd_io__fill5 FILL_E00_2 (.VSS(W12), .DVSS(W12), .VDD(FLOAT_VDD_1), .DVDD(FLOAT_VDD_1));
   gf180mcu_fd_io__fill5 FILL_E00_3 (.VSS(W12), .DVSS(W12), .VDD(FLOAT_VDD_1), .DVDD(FLOAT_VDD_1));

@@ -13,7 +13,9 @@
   "LVS_FLATTEN": [],
   "LVS_NOFLATTEN": [],
   "LVS_IGNORE": [],
-  "LVS_SPICE_FILES": [],
+  "LVS_SPICE_FILES": [
+    "$UPRJ_ROOT/src/layout/integration/ADC_v16_final_LVS_reference.spice"
+  ],
   "LVS_VERILOG_FILES": [],
-  "LAYOUT_FILE": "$UPRJ_ROOT/src/layout/integration/ADC_v19_WellSpacing.gds"
+  "LAYOUT_FILE": "$UPRJ_ROOT/src/layout/integration/ADC_v20_Hierarchical.gds"
 }
