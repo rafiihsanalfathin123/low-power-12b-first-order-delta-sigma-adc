@@ -15,5 +15,5 @@
   "LVS_IGNORE": [],
   "LVS_SPICE_FILES": [],
   "LVS_VERILOG_FILES": [],
-  "LAYOUT_FILE": "$UPRJ_ROOT/src/layout/integration/integration_v8.gds"
+  "LAYOUT_FILE": "$UPRJ_ROOT/src/layout/integration/ADC_v19_WellSpacing.gds"
 }
