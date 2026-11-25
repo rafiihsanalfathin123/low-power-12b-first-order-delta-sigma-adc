@@ -58,7 +58,7 @@ pins:
     io_type: input_schmitt
   - name: serial_out
     io_type: bidirectional
-  - name: load_en
-    io_type: input_cmos
   - name: DVDD
     io_type: power
+  - name: load_en
+    io_type: input_cmos
