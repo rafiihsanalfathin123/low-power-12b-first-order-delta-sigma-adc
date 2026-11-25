@@ -1,4 +1,6 @@
-source_info: info.yaml
+spec_blob_sha: 7398a4da36e4d6ad9f9b76c06813b073c9c0ed2f
+source_info: data/A52/info.yaml
+source_template: /Users/kanobailey/chipathon/2026/padring/chipathon2026-system/padring_template.cfg
 block: BV
 team_code: A52_BV
 design_name: A52_BV_padring
@@ -84,17 +86,17 @@ pads:
   io_type: bidirectional
   cell: gf180mcu_fd_io__bi_t
 - pin_index: 12
-  pin_name: DVDD
+  pin_name: load_en
   slot: N02
   instance: N02
-  io_type: power
-  cell: gf180mcu_fd_io__dvdd
-- pin_index: 13
-  pin_name: load_en
-  slot: N03
-  instance: N03
   io_type: input_cmos
   cell: gf180mcu_fd_io__in_c
+- pin_index: 13
+  pin_name: DVDD
+  slot: N03
+  instance: N03
+  io_type: power
+  cell: gf180mcu_fd_io__dvdd
 - slot: N04
   instance: N04
   generated: true
